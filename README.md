@@ -98,3 +98,7 @@ For accessing the location we have various API’s like Google Maps and Mapbox. 
  Using Cypress, developers can create:
  
  Unit tests Integration tests End to End tests
+ 
+ ## ER DIAGRAM 
+ 
+ ![](https://github.com/Krishna-Koyyalamudi/hunt-1/blob/master/finalERDNodate.jpeg)
