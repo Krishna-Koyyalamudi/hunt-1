@@ -7,4 +7,10 @@ const PlayerscoreSchema = new mongoose.Schema({
         unique: true,
         required: true,
     }, 
-    
+    dateTimeScored: { 
+
+        myDate : ISODate("0001-01-01T18:59:32.521Z") 
+        
+    }
+}); 
+
