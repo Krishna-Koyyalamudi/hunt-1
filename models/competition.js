@@ -20,14 +20,14 @@ const competitionSchema = new mongoose.Schema({
       dateCreated: {
          type: DataTypes.INTEGER,
          allowNull: false,         
-      } 
+      }, 
       startDatetime: {
          type: DataTypes.INTEGER,
          allowNull: false,         
-      } 
+      }, 
       endDatetime: {
          type: DataTypes.INTEGER,
          allowNull: false,         
-      } 
+      }, 
 });
 module.exports = mongoose.model('Competition', competitionschema);
