@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 // Require controller modules.
-const competition_controller = require('../controllers/competitionController');
-const player_controller = require('../controllers/playerController');
-const quest_controller = require('../controllers/questController');
+const competition_controller = require('../controllers/competitioncontroller');
+const player_controller = require('../controllers/playercontroller');
+const quest_controller = require('../controllers/questcontroller');
 const team_controller = require('../controllers/teamcontroller');
 const user_controller = require('../controllers/usercontroller');
 
