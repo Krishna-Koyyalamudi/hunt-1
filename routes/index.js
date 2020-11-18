@@ -41,7 +41,11 @@ router.get('/team/index', team_controller.teamlist);
 
 router.get('/team/create', team_controller.createteam);
 
-router.post('/team/addTeam', team_controller.addTeam);
+router.post('/team/addteam', team_controller.addTeam);
+
+router.get('/team/delete', team_controller.deleteteam);
+
+router.post('/team/removeteam', team_controller.removeTeam);
 
 router.get('/team/tinvite', team_controller.tinvite);
 

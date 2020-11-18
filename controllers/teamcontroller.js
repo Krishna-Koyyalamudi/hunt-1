@@ -53,7 +53,11 @@ exports.addTeam = function(req, res) {
     });
 };
 
-exports.deleteTeam = function(req, res) {
+exports.deleteteam = function(req, res) {
+    res.render('team/delete');
+}
+
+exports.removeTeam = function(req, res) {
 
     // Get our form values. These rely on the "name" attributes
     var teamId = req.body.teamid;
