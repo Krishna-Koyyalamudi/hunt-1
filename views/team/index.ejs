@@ -18,6 +18,32 @@
   </style>
   <br>
   <br>
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>TeamID</th>
+        
+        <th>TeamName</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% for(var i=0; i < teams.length; i++) { %>
+      <tr>
+        <td><%= teams[i].teamid %></td>
+        
+        <td><%= teams[i].teamname  %></td>
+        
+        <td>
+          <i class='fa fa-edit'></i>
+        </td>
+        <td> <i class="fa fa-trash"></i></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table> 
   
 
  
