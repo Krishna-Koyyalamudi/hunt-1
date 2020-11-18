@@ -5,8 +5,12 @@ const competitionteammappingSchema = new mongoose.Schema({
         primaryKey: true,
         unique:true,
     },
-    competitionId: {
+    teamId: {
         type: DataTypes.INTEGER,
+        references: {
+         Model: "team",
+         primaryKey: "teamID"}
         primaryKey: true,
         unique:true,
     },
+    
