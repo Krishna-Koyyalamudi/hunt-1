@@ -35,7 +35,7 @@ We can also clone the repository using github desktop.
     * Steps for starting the cloned repository using the Powershell.
     * Open PS as admin using the Powershell in the-Hunt Folder.
     * Use "npm install" to install modules.
-    * Use "npm run dev" to start a local version.
+    * Use "npm start" to start a local version.
     * Open a browser to the URL provided in the powershell
 
 Link: https://desktop.github.com/
