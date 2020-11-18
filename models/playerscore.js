@@ -14,3 +14,4 @@ const PlayerscoreSchema = new mongoose.Schema({
     }
 }); 
 
+module.exports = mongoose.model('Playerscore', PlayerscoreSchema);
