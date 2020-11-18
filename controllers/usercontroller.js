@@ -37,15 +37,24 @@ exports.logout = function (req, res) {
     });
 }
 
-
+/* GET Userlist page. */
+exports.userlist = async function (req, res) {
+    try {
+        const users = await User.find()
+        //console.log(users)
+        res.render('user/index', { users })
+    } catch (err) {
+        console.log(err)
+        res.status(500).send('failure')
+    }
+};
 
 /* GET New User page. */
-exports.newuser = function (req, res) {
+exports.createuser = function (req, res) {
     res.render('user/create', { title: 'Add New User' });
 };
 
 /* POST to Add User Service */
-//router.post('/adduser', function(req, res) {
 exports.adduser = function (req, res) {
 
     // Get our form values. These rely on the "name" attributes
@@ -62,8 +71,8 @@ exports.adduser = function (req, res) {
 
     newUser.save(function (err) {
         if (err) {
-            console.log(err)
             // If it failed, return error
+            console.log(err)
             res.send("There was a problem adding the information to the database.");
         }
         else {
@@ -73,16 +82,4 @@ exports.adduser = function (req, res) {
         }
     });
 
-};
-
-/* GET Userlist page. */
-exports.userlist = async function (req, res) {
-    try {
-        const users = await User.find()
-        console.log(users)
-        res.render('user/index', { users })
-    } catch (err) {
-        console.log(err)
-        res.status(500).send('failure')
-    }
-};
+}; 
