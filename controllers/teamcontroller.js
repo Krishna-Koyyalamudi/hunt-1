@@ -14,7 +14,7 @@ exports.teamlist = function (req, res) {
 //     })
 // }
 
-exports.create = function (req, res) {
+exports.createteam = function (req, res) {
     res.render('team/create');
 }
 

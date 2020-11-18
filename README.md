@@ -14,7 +14,7 @@ Saikrishna Emmadishetty
 
 ## Routes to verify db access
  * List of users in db : https://hunt-1.herokuapp.com/user/index
- * Add a new user : https://hunt-1.herokuapp.com/user/newuser
+ * Add a new user : https://hunt-1.herokuapp.com/user/create
  * List of teams in db : https://hunt-1.herokuapp.com/team/index
  * Create a new team : https://hunt-1.herokuapp.com/team/create
 

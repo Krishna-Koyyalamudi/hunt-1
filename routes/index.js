@@ -30,7 +30,7 @@ router.get('/user/index', user_controller.userlist);
 
 router.get('/dashboard', user_controller.dashboard);
 
-router.get('/user/newuser', user_controller.newuser);
+router.get('/user/create', user_controller.createuser);
 
 router.post('/user/adduser', user_controller.adduser);
 
@@ -39,7 +39,7 @@ router.post('/user/adduser', user_controller.adduser);
 
 router.get('/team/index', team_controller.teamlist);
 
-router.get('/team/create', team_controller.create);
+router.get('/team/create', team_controller.createteam);
 
 router.post('/team/addTeam', team_controller.addTeam);
 
