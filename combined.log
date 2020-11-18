@@ -18,3 +18,23 @@ info: Data Saved: {
   teamname: 'Vikings',
   __v: 0
 } {"timestamp":"2020-11-18T01:53:45.120Z"}
+info: START data seeder. {"timestamp":"2020-11-18T09:07:52.514Z"}
+info: Database deleted; ready for seeding. {"timestamp":"2020-11-18T09:07:52.526Z"}
+info: Model Created: { _id: 5fb4e4686cc88f0668b073cb, teamid: 99, teamname: 'Vikings' } {"timestamp":"2020-11-18T09:07:52.564Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-18T09:07:52.569Z"}
+info: Data Saved: {
+  _id: 5fb4e4686cc88f0668b073cb,
+  teamid: 99,
+  teamname: 'Vikings',
+  __v: 0
+} {"timestamp":"2020-11-18T09:07:52.815Z"}
+info: START data seeder. {"timestamp":"2020-11-18T21:32:19.849Z"}
+info: Database deleted; ready for seeding. {"timestamp":"2020-11-18T21:32:19.870Z"}
+info: Model Created: { _id: 5fb592e3c8258647945d020d, teamid: 99, teamname: 'Vikings' } {"timestamp":"2020-11-18T21:32:19.908Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-18T21:32:19.916Z"}
+info: Data Saved: {
+  _id: 5fb592e3c8258647945d020d,
+  teamid: 99,
+  teamname: 'Vikings',
+  __v: 0
+} {"timestamp":"2020-11-18T21:32:20.157Z"}
