@@ -8,12 +8,6 @@ exports.teamlist = function(req, res) {
     res.render('team/index');
 }
 
-// exports.teamlist = function(req, res){
-//     teams.find({}, function (err, ) {
-
-//     })
-// }
-
 exports.createteam = function(req, res) {
     res.render('team/create');
 }

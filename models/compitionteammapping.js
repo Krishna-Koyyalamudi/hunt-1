@@ -9,7 +9,7 @@ const competitionteammappingSchema = new mongoose.Schema({
         type: DataTypes.INTEGER,
         references: {
          Model: "team",
-         primaryKey: "teamID"}
+         primaryKey: "teamID"},
         primaryKey: true,
         unique:true,
     },
