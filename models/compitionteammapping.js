@@ -13,4 +13,23 @@ const competitionteammappingSchema = new mongoose.Schema({
         primaryKey: true,
         unique:true,
     },
+    datetimeInvited: {
+         type: DataTypes.INTEGER,
+         allowNull: false,         
+      }, 
+    datetimeAccepted: {
+         type: DataTypes.INTEGER,
+         allowNull: false,         
+      }, 
+    datetimeRejected: {
+         type: DataTypes.INTEGER,
+         allowNull: false,         
+      }, 
+    datetimeDeleted: {
+         type: DataTypes.INTEGER,
+         allowNull: false,         
+      }, 
+    });
+module.exports = mongoose.model('Competitionteammapping', competitionteammappingschema);
+    
     
