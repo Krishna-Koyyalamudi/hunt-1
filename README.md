@@ -101,4 +101,4 @@ For accessing the location we have various API’s like Google Maps and Mapbox. 
  
  ## ER DIAGRAM 
  
- 1[](https://github.com/Krishna-Koyyalamudi/hunt-1/blob/master/finalERDNodate.jpeg)
+ ![](https://github.com/Krishna-Koyyalamudi/hunt-1/blob/master/finalERDNodate.jpeg)
