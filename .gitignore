@@ -2,3 +2,5 @@
 
 # Ignore API keys and secrets
 .env
+combined.log
+errors.log

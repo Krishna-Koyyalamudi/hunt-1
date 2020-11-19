@@ -53,6 +53,12 @@ router.get('/team/pinvite', team_controller.pinvite);
 
 /// Quest Routes ///
 
+router.get('/quest/create', quest_controller.createquest);
+
+router.get('/quest/index', quest_controller.questlist);
+
+
+
 /// Competition Routes ///
 
 

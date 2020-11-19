@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 const questSchema = new mongoose.Schema({
     questId: {
-        type: DataTypes.INTEGER,
+        type: Number,
         primaryKey: true,
         allowIncrement: true
     },
     questName:
     {
-        type:DataTypes.STRING(200),
+        type:String,
         allowNull: false
     },
     dateCreated:
@@ -23,11 +23,11 @@ const questSchema = new mongoose.Schema({
     },
     questStartLocationLatitude:
     {
-
+        type:String
     },
     questStartLocationLongitude:
     {
-
+        type:String
     }
 });
 module.exports = mongoose.model('Quest', questSchema);
