@@ -1,4 +1,9 @@
 
+<html>
+  <head></head>
+    
+    <%- include('../partials/header'); -%>
+   
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -16,8 +21,9 @@
   } 
   
   </style>
+   <body>
   <br>
-  <br>
+ 
   <table style="width:100%">
     <thead>
       <tr>
@@ -29,6 +35,7 @@
       </tr>
     </thead>
   
+
     <tbody>
       <% for(var i=0; i < teams.length; i++) { %>
       <tr>
@@ -44,6 +51,9 @@
       <% } %>
     </tbody>
   </table> 
-  
 
+</body>
+<br>
+<%- include('../partials/footer'); -%>
+  </html>
  
