@@ -39,13 +39,13 @@ router.get('/dashboard', user_controller.dashboard);
 
 router.get('/team/create', team_controller.createteam);
 
-router.post('/team/addteam', team_controller.addTeam);
+router.post('/team/addteam', team_controller.addteam);
 
 router.get('/team/index', team_controller.teamlist);
 
 router.patch('/team/edit', team_controller.editteam);
 
-router.delete('/team/delete', team_controller.removeTeam);
+router.delete('/team/delete', team_controller.removeteam);
 
 router.get('/team/tinvite', team_controller.tinvite);
 
