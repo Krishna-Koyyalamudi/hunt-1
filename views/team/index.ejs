@@ -1,59 +1,65 @@
-
 <html>
-  <head></head>
-    
-    <%- include('../partials/header'); -%>
-   
+
+<head></head>
+
+<%- include('../partials/header'); -%>
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  table, th, td {
+  table,
+  th,
+  td {
     border: 1px solid black;
     border-collapse: collapse;
   }
-  th, td {
+
+  th,
+  td {
     padding: 15px;
     text-align: center;
   }
+
   #t01 {
-    width: 100%;    
+    width: 100%;
     background-color: #f1f1c1;
-  } 
-  
-  </style>
-   <body>
+  }
+</style>
+
+<body>
   <br>
- 
+
   <table style="width:100%">
     <thead>
       <tr>
         <th>TeamID</th>
-        
+
         <th>TeamName</th>
         <th>Edit</th>
         <th>Delete</th>
       </tr>
     </thead>
-  
+
 
     <tbody>
       <% for(var i=0; i < teams.length; i++) { %>
       <tr>
         <td><%= teams[i].teamid %></td>
-        
+
         <td><%= teams[i].teamname  %></td>
-        
         <td>
-          <i class='fa fa-edit'></i>
+          <a href="/team/update/<%= teams[i].teamid %>"><i class='fa fa-edit'></i></a>
         </td>
-        <td> <i class="fa fa-trash"></i></td>
+        <td>
+          <a href="/team/delete/<%= teams[i].teamid %>"><i class="fa fa-trash"></i></a>
+        </td>
       </tr>
       <% } %>
     </tbody>
-  </table> 
+  </table>
 
 </body>
 <br>
 <%- include('../partials/footer'); -%>
-  </html>
- 
+
+</html>

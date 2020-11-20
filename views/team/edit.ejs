@@ -11,7 +11,7 @@
       Edit Team
     </div>
     <div class="card-body">
-      <form action="/team/save/<%= team.id %>" method="post">
+      <form action="/team/edit/<%= team.id %>" method="post">
         <div class="form-group">
           <label for="name">Team Name:</label>
           <input type="text" class="form-control" id="name" name="name" value="<%= team.name %>" autocomplete="off">
