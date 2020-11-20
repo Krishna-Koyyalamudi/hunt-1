@@ -35,6 +35,8 @@ router.get('/user/newpassword', user_controller.forgot3);
 
 router.get('/dashboard', user_controller.dashboard);
 
+router.get('/group', user_controller.group);
+
 /// Team Routes ///
 
 router.get('/team/create', team_controller.createteam);
@@ -42,6 +44,8 @@ router.get('/team/create', team_controller.createteam);
 router.post('/team/addteam', team_controller.addteam);
 
 router.get('/team/index', team_controller.teamlist);
+
+router.get('/team/update', team_controller.updateteam);
 
 router.patch('/team/edit', team_controller.editteam);
 

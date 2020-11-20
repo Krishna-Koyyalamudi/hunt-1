@@ -1,4 +1,5 @@
 const express = require("express");
+const { response } = require("../app");
 const app = express();
 
 const Quest = require('../models/quest');
@@ -6,7 +7,7 @@ var exports = module.exports = {};
 
 // Render view to add a new quest
 exports.createquest = function (req, res) {
-    res.render('quest/create');
+    res.render('quest/create.html');
 }
 
 // api to CREATE a new quest data

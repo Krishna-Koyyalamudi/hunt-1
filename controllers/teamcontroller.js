@@ -54,6 +54,11 @@ exports.teamlist = async function(req, res) {
     }
 };
 
+// Render view with fields to update team details
+exports.updateteam = function(req, res){
+    res.render('team/edit');
+};
+
 // api to UPDATE team data
 exports.editteam = function(req, res){
 

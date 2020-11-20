@@ -83,3 +83,8 @@ exports.adduser = function (req, res) {
     });
 
 }; 
+
+// Group Member Details
+exports.group = function(req, res){
+    res.render('user/group');
+}
