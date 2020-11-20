@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Add Team</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Add New Team</h1>
     <form id="formAddTeam" name="addteam" method="post" action="/team/addTeam">
-      <input id="inputTeamId" type="text" placeholder="TeamId" name="teamid" />
-      <input id="inputTeamName" type="text" placeholder="TeamName" name="teamname" />
-      <button id="btnSubmit" type="submit">Submit</button>
+        <input id="inputTeamId" type="text" placeholder="TeamId" name="teamid" />
+        <input id="inputTeamName" type="text" placeholder="TeamName" name="teamname" />
+        <button id="btnSubmit" type="submit">Submit</button>
     </form>
-  </body>
+</body>
+<%- include('partials/footer'); -%>
+
 </html>

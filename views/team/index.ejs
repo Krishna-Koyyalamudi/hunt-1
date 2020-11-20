@@ -1,65 +1,82 @@
 <html>
 
-<head></head>
+<head>
+    <%- include('../partials/header'); -%>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Hunt</title>
+        <!-- get styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+</head>
 
-<%- include('../partials/header'); -%>
+<!-- <%- include('../partials/header'); -%> -->
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    padding: 15px;
-    text-align: center;
-  }
-
-  #t01 {
-    width: 100%;
-    background-color: #f1f1c1;
-  }
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    
+    th,
+    td {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    #t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+    }
 </style>
 
 <body>
-  <br>
+    <br>
 
-  <table style="width:100%">
-    <thead>
-      <tr>
-        <th>TeamID</th>
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>TeamID</th>
 
-        <th>TeamName</th>
-        <th>Edit</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
+                <th>TeamName</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
 
 
-    <tbody>
-      <% for(var i=0; i < teams.length; i++) { %>
-      <tr>
-        <td><%= teams[i].teamid %></td>
+        <tbody>
+            <% for(var i=0; i < teams.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= teams[i].teamid %>
+                    </td>
 
-        <td><%= teams[i].teamname  %></td>
-        <td>
-          <a href="/team/update/<%= teams[i].teamid %>"><i class='fa fa-edit'></i></a>
-        </td>
-        <td>
-          <a href="/team/delete/<%= teams[i].teamid %>"><i class="fa fa-trash"></i></a>
-        </td>
-      </tr>
-      <% } %>
-    </tbody>
-  </table>
+                    <td>
+                        <%= teams[i].teamname  %>
+                    </td>
+                    <td>
+                        <a href="/team/update/<%= teams[i].teamid %>"><i class='fa fa-edit'></i></a>
+                    </td>
+                    <td>
+                        <a href="/team/delete/<%= teams[i].teamid %>"><i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
 
 </body>
 <br>
+<!-- <%- include('../partials/footer'); -%> -->
 <%- include('../partials/footer'); -%>
 
 </html>
