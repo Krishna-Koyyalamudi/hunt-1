@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 
 <head>
     <title>Add Team</title>
@@ -16,4 +17,55 @@
 </body>
 <%- include('partials/footer'); -%>
 
+=======
+  
+  <head>
+    
+    <title>Add Team</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  </head>
+  <%- include('../partials/header'); -%>
+  <body style="text-align: center;">
+   <main> 
+      <form id="formAddTeam" name="addteam" method="post" action="/team/addTeam">
+      <section class="d-flex align-items-center mx-auto mt-5 p-5 flex-column col-lg-4  shadow-lg rounded"
+          style="background-color:white">
+          <label class="text-center headText"
+              style="font-size: 24px;font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif">Add New Team</label>
+
+         
+              <input id="inputTeamId" type="text" placeholder="TeamId" name="teamid" class="pl-2" style="border: none;
+              border-bottom: 1px black solid;
+              outline:none;
+              width:20rem;
+              background: white;">
+              <br>
+              <br>
+          <input id="inputTeamName" type="text" placeholder="TeamName" name="teamname" style="border: none;
+          border-bottom: 1px black solid;
+          outline:none;
+          width:20rem;
+          background: white;">
+          <br>
+          <br>
+          <button class="rounded-100  text-center" id="btnSubmit"
+              style="display: flex; margin: 0 auto; background-color: #00674c; color: white; padding: 0px;border-radius: 6px;align-self: center; height: 30px;width: 120px;justify-content: center;"
+             >Submit
+          </button>
+          
+          
+      </section>
+    </form>
+      
+  </main>
+    
+  </body>
+  <%- include('../partials/footer'); -%>
+>>>>>>> 88f26c510179ffbc702fc3a88ecee373f2c27081
 </html>
