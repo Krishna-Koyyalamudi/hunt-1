@@ -4,23 +4,13 @@ const app = express();
 const Team = require('../models/team');
 var exports = module.exports = {};
 
-exports.teamlist = function(req, res) {
-    res.render('team/index');
-}
-
+// Render view to add a new team
 exports.createteam = function(req, res) {
     res.render('team/create');
 }
 
-exports.tinvite = function(req, res) {
-    res.render('team/teamInvite');
-}
-
-exports.pinvite = function(req, res) {
-    res.render('team/invitePlayers');
-}
-
-exports.addTeam = function(req, res) {
+// api to CREATE team data
+exports.addteam = function(req, res) {
 
     // Get our form values. These rely on the "name" attributes
     var teamId = req.body.teamid;
@@ -47,11 +37,30 @@ exports.addTeam = function(req, res) {
     });
 };
 
-exports.deleteteam = function(req, res) {
-    res.render('team/delete');
+// Render view with all teams details
+exports.teamlist = function(req, res) {
+    res.render('team/index');
 }
 
-exports.removeTeam = function(req, res) {
+// api to GET teams data
+exports.teamlist = async function(req, res) {
+    try {
+        const teams = await Team.find()
+        console.log(teams)
+        res.render('team/index', { teams })
+    } catch (err) {
+        console.log(err)
+        res.status(500).send('failure')
+    }
+};
+
+// api to UPDATE team data
+exports.editteam = function(req, res){
+
+};
+
+// api to DELETE team data
+exports.removeteam = function(req, res) {
 
     // Get our form values. These rely on the "name" attributes
     var teamId = req.body.teamid;
@@ -78,14 +87,11 @@ exports.removeTeam = function(req, res) {
     });
 };
 
-/* GET Teamlist page. */
-exports.teamlist = async function(req, res) {
-    try {
-        const teams = await Team.find()
-        console.log(teams)
-        res.render('team/index', { teams })
-    } catch (err) {
-        console.log(err)
-        res.status(500).send('failure')
-    }
-};
+exports.tinvite = function(req, res) {
+    res.render('team/teamInvite');
+}
+
+exports.pinvite = function(req, res) {
+    res.render('team/invitePlayers');
+}
+

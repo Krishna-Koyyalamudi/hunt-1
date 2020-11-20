@@ -18,22 +18,22 @@ const Team = require('../models/team');
 
 // inject Express app to configure it - EVERYTHING in through argument list
 
-module.exports = async (db) => {
-  LOG.info('START data seeder.');
+// module.exports = async (db) => {
+//   LOG.info('START data seeder.');
 
-  db.dropDatabase();
-  LOG.info('Database deleted; ready for seeding.');
+//   db.dropDatabase();
+//   LOG.info('Database deleted; ready for seeding.');
 
-  const newTeam = await new Team({
-    teamid: 99,
-    teamname: 'Vikings'
-  });
-  LOG.info(`Model Created: ${newTeam}`);
+//   const newTeam = await new Team({
+//     teamid: 99,
+//     teamname: 'Vikings'
+//   });
+//   LOG.info(`Model Created: ${newTeam}`);
 
-  await newTeam.save(function (err) {
-    if (err) { LOG.error(`ERROR SAVING newTeam: ${err}`); }
-    else { LOG.info(`Data Saved: ${newTeam}`); }
-  });
+//   await newTeam.save(function (err) {
+//     if (err) { LOG.error(`ERROR SAVING newTeam: ${err}`); }
+//     else { LOG.info(`Data Saved: ${newTeam}`); }
+//   });
 
-  LOG.info('END Data Seeder. Sample data read and verified.');
-};
+//   LOG.info('END Data Seeder. Sample data read and verified.');
+// };

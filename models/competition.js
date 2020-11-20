@@ -2,32 +2,32 @@ const mongoose = require("mongoose");
 
 const competitionSchema = new mongoose.Schema({
     competitionName: {
-        type: DataTypes.STRING(200),
+        type: String,
         primaryKey: true,
     },
      creatorUserId: {
-         type: DataTypes.INTEGER,
+         type: Number,
        //  references: {
        //  Model: "quest",
        //  primaryKey: "locationId"}
     },
 
      questId : {
-        type: DataTypes.INTEGER,
+        type: Number,
         allowNull: false,
         unique: true,
       },
       dateCreated: {
-         type: DataTypes.INTEGER,
+         type: Number,
          allowNull: false,         
       }, 
       startDatetime: {
-         type: DataTypes.INTEGER,
+         type: Number,
          allowNull: false,         
       }, 
       endDatetime: {
-         type: DataTypes.INTEGER,
+         type: Number,
          allowNull: false,         
       }, 
 });
-module.exports = mongoose.model('Competition', competitionschema);
+module.exports = mongoose.model('Competition', competitionSchema);
