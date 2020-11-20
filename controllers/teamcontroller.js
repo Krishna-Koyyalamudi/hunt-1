@@ -46,7 +46,7 @@ exports.teamlist = function(req, res) {
 exports.teamlist = async function(req, res) {
     try {
         const teams = await Team.find()
-        console.log(teams)
+        //console.log(teams)
         res.render('team/index', { teams })
     } catch (err) {
         console.log(err)

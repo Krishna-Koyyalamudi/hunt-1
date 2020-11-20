@@ -5,16 +5,16 @@
 
 <head>
     <%- include('../partials/header'); -%>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Hunt</title>
-        <!-- get styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-        <!-- Bootstrap core CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Material Design Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Hunt</title>
+    <!-- get styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 </head>
 
 
@@ -29,23 +29,28 @@
 
             <section class="d-flex align-items-center mx-auto mt-5 p-5 flex-column col-lg-4  shadow-lg rounded">
 
-                <label class="text-center headText" style="font-size: 24px;font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif">Add New Team</label>
+                <label class="text-center headText"
+                    style="font-size: 24px;font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif">Add New
+                    Team</label>
 
-
-                <input id="inputTeamId" type="text" placeholder="TeamId" name="teamid" class="pl-2" style="border: none;border-bottom: 1px black solid;outline:none;
+                <form id="formAddTeam" name="addteam" method="post" action="/team/addTeam">
+                    <input id="inputTeamId" type="text" placeholder="TeamId" name="teamid" class="pl-2" style="border: none;border-bottom: 1px black solid;outline:none;
               width:20rem;
               background: white;">
-                <br>
-                <br>
-                <input id="inputTeamName" type="text" placeholder="TeamName" name="teamname" style="border: none;
+                    <br>
+                    <br>
+                    <input id="inputTeamName" type="text" placeholder="TeamName" name="teamname" style="border: none;
           border-bottom: 1px black solid;
           outline:none;
           width:20rem;
           background: white;">
-                <br>
-                <br>
-                <button class="rounded-100  text-center" id="btnSubmit" style="display: flex; margin: 0 auto; background-color: #00674c; color: white; padding: 0px;border-radius: 6px;align-self: center; height: 30px;width: 120px;justify-content: center;">Submit
-          </button>
+                    <br>
+                    <br>
+                    <button style="background-color: #00674c; color: white; border-radius: 6px;align-self: center; justify-content: center;" id="btnSubmit" type="submit" class="btn">
+                        
+                        Add
+                    </button>
+                </form>
 
 
             </section>

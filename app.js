@@ -5,12 +5,11 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const dotenv = require('dotenv');
+const compression = require('compression');
+const helmet = require('helmet');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
-const compression = require('compression');
-const helmet = require('helmet');
 
 const seeder = require('./util/seeder');
 
