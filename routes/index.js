@@ -8,12 +8,18 @@ const quest_controller = require('../controllers/questcontroller');
 const team_controller = require('../controllers/teamcontroller');
 const user_controller = require('../controllers/usercontroller');
 
-/// USER ROUTES ///
+/// COMMON ROUTES ///
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('user/loginpage', { title: 'Login Page' });
 });
+
+router.get('/create', user_controller.createscreen);
+
+
+
+/// USER ROUTES ///
 
 // GET Login as home page.
 

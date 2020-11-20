@@ -88,3 +88,7 @@ exports.adduser = function (req, res) {
 exports.group = function(req, res){
     res.render('user/group');
 }
+
+exports.createscreen =  function(req, res){
+    res.render('createScreen');
+}
