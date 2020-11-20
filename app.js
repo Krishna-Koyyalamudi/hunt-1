@@ -45,6 +45,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html',require('ejs').renderFile)
 app.set('view engine', 'ejs');
+//app.set('scripts', path.join(__dirname, 'public/scripts'))
 
 app.use(logger('dev'));
 app.use(express.json());

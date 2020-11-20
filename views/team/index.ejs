@@ -64,10 +64,12 @@
                         <%= teams[i].teamname  %>
                     </td>
                     <td>
+                        
                         <a href="/team/update/<%= teams[i].teamid %>"><i class='fa fa-edit'></i></a>
                     </td>
                     <td>
                         <a href="/team/delete/<%= teams[i].teamid %>"><i class="fa fa-trash"></i></a>
+                    </form>
                     </td>
                 </tr>
                 <% } %>
