@@ -18,22 +18,34 @@ const Team = require('../models/team');
 
 // inject Express app to configure it - EVERYTHING in through argument list
 
-// module.exports = async (db) => {
-//   LOG.info('START data seeder.');
+module.exports = async (db) => {
+  LOG.info('START data seeder.');
 
-//   db.dropDatabase();
-//   LOG.info('Database deleted; ready for seeding.');
+  db.dropDatabase();
+  LOG.info('Database deleted; ready for seeding.');
 
-//   const newTeam = await new Team({
-//     teamid: 99,
-//     teamname: 'Vikings'
-//   });
-//   LOG.info(`Model Created: ${newTeam}`);
+  const newTeam1 = await new Team({
+    teamid: 99,
+    teamname: 'Vikings'
+  });
+  LOG.info(`Model Created: ${newTeam1}`);
 
-//   await newTeam.save(function (err) {
-//     if (err) { LOG.error(`ERROR SAVING newTeam: ${err}`); }
-//     else { LOG.info(`Data Saved: ${newTeam}`); }
-//   });
+  await newTeam1.save(function (err) {
+    if (err) { LOG.error(`ERROR SAVING newTeam: ${err}`); }
+    else { LOG.info(`Data Saved: ${newTeam1}`); }
+  });
 
-//   LOG.info('END Data Seeder. Sample data read and verified.');
-// };
+  const newTeam2 = await new Team({
+    teamid: 66,
+    teamname: 'Scouts'
+  });
+  LOG.info(`Model Created: ${newTeam2}`);
+
+  await newTeam2.save(function (err) {
+    if (err) { LOG.error(`ERROR SAVING newTeam: ${err}`); }
+    else { LOG.info(`Data Saved: ${newTeam2}`); }
+  });
+
+
+  LOG.info('END Data Seeder. Sample data read and verified.');
+};

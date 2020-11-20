@@ -37,7 +37,7 @@ mongoose.connect(mongoDB, { useNewUrlParser: true ,useUnifiedTopology: true});
 mongoose.Promise = global.Promise;
 const db = mongoose.connection.on('connected',() =>{
   console.log('Mongoose is connected !');
-  //seeder(db);
+  seeder(db);
 });
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
