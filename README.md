@@ -8,7 +8,7 @@ Prasad Golla Durga
 
 Pruthvi Nashkanti
 
-Vishal Reddy Vennavaram
+Vishal Reddy Vennavaram  (LinkedIn: https://www.linkedin.com/in/vishalreddyvennavaram/)
 
 Saikrishna Emmadishetty
 
