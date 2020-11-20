@@ -2,7 +2,7 @@
 
 # Group Members
 
-Krishna Sumanth Koyyalamudi
+Krishna Sumanth Koyyalamudi (LinkedIn: https://www.linkedin.com/in/krishna-s-koyylamudi/)
 
 Prasad Golla Durga
 
@@ -10,7 +10,7 @@ Pruthvi Nashkanti
 
 Vishal Reddy Vennavaram  (LinkedIn: https://www.linkedin.com/in/vishalreddyvennavaram/)
 
-Saikrishna Emmadishetty
+Saikrishna Emmadishetty (LinkedIn: https://www.linkedin.com/in/saikrishna-emmadishetty-613014146)
 
 ## Routes to verify db access
  * List of users in db : https://hunt-1.herokuapp.com/user/index
