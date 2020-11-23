@@ -57,6 +57,21 @@ exports.editcompetition = function (req, res) {
 }
 
 // api to DELETE a competition data
-exports.removecompetition = function (req, res) {
+// exports.removecompetition = function (req, res) {
 
-}
+// }
+app.get("/delete", (req, res, next) => {
+    LOG.info(`Handling GET /delete/:id ${req}`)
+    var sql = "delete from competition where competitionName = ?"
+    var params = []
+    db.all(sql,params, (err, rows) => {
+      if (err) {
+        res.status(400).json({ "error": err.message });
+        return;
+      }
+      res.json({
+        "message": "success",
+        "data": rows
+      })
+    });
+  });
