@@ -28,9 +28,23 @@ exports.addcompetition = function (req, res) {
 }
 
 // Render view with list of competitions
-exports.competitionlist = function (req, res) {
-    res.render('competition/index');
-}
+// exports.competitionlist = function (req, res) {
+//     res.render('competition/index');
+// }
+app.get("/competition:list", (req, res, next) => {
+    var sql = "select * from competition"
+    var params = []
+    db.all(sql, params, (err, rows) => {
+      if (err) {
+        res.status(400).json({ "error": err.message });
+        return;
+      }
+      res.json({
+        "message": "success",
+        "data": rows
+      })
+    });
+  });
 
 // api to GET list of quets data
 exports.getcompetition = function (req, res) {
