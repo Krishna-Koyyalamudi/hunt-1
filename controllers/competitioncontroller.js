@@ -23,9 +23,22 @@ app.post("/competition:create", (req, res, next) => {
 });
 
 // api to CREATE a new competition data
-exports.addcompetition = function (req, res) {
+// exports.addcompetition = function (req, res) {
 
-}
+// }
+app.post("/api/competition/", (req, res, next) => {
+    var errors = []
+    if (!req.body.competitionname) {
+      errors.push("Competititon name not specified");
+    }   
+    if (errors.length) {
+      res.status(400).json({ "error": errors.join(",") });
+      return;
+    }
+    res.json({
+      "message": "success"
+    })
+});
 
 // Render view with list of competitions
 // exports.competitionlist = function (req, res) {
