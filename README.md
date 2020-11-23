@@ -4,9 +4,9 @@
 
 Krishna Sumanth Koyyalamudi (LinkedIn: https://www.linkedin.com/in/krishna-s-koyylamudi/)
 
-Prasad Golla Durga
+Prasad Golla Durga(LinkedIn: https://www.linkedin.com/in/g-d-prasad-920b7919a/)
 
-Pruthvi Nashkanti
+Pruthvi Nashkanti(LinkedIn: https://www.linkedin.com/mwlite/in/pruthvi-naskanti-18a19a117)
 
 Vishal Reddy Vennavaram  (LinkedIn: https://www.linkedin.com/in/vishalreddyvennavaram/)
 
