@@ -22,15 +22,16 @@ exports.questlist = function (req, res) {
 
 // api to GET list of quets data
 exports.getquest = function (req, res) {
-
+      res.render('quest/details');
 }
 
 // api to UPDATE quest data
 exports.editquest = function (req, res) {
-
+    res.render('quest/edit');
 }
 
 // api to DELETE a quest data
 exports.removequest = function (req, res) {
+    res.render('quest/delete');
 
 }
