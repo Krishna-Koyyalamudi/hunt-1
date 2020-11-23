@@ -5,9 +5,22 @@ const Competition = require('../models/competition');
 var exports = module.exports = {};
 
 // Render view to add a new competition
-exports.createcompetition = function (req, res) {
-    res.render('competition/create');
-}
+// exports.createcompetition = function (req, res) {
+//     res.render('competition/create');
+// }
+app.post("/competition:create", (req, res, next) => {
+    var errors = []
+    if (!req.body.competitionname) {
+      errors.push("Competititon name not specified");
+    }   
+    if (errors.length) {
+      res.status(400).json({ "error": errors.join(",") });
+      return;
+    }
+    res.json({
+      "message": "success"
+    })
+});
 
 // api to CREATE a new competition data
 exports.addcompetition = function (req, res) {
