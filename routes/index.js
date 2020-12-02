@@ -33,7 +33,7 @@ router.get('/user/login', user_controller.login);
 
 router.get('/user/register', user_controller.register);
 
-router.get('/user/forgotpass', user_controller.forgot1);
+router.get('/user/forgotpassword', user_controller.forgot1);
 
 router.get('/user/receivecode', user_controller.forgot2);
 
@@ -57,9 +57,9 @@ router.patch('/team/edit', team_controller.editteam);
 
 router.delete('/team/delete', team_controller.removeteam);
 
-router.get('/team/tinvite', team_controller.tinvite);
+router.get('/team/teaminvite', team_controller.tinvite);
 
-router.get('/team/pinvite', team_controller.pinvite);
+router.get('/team/playerinvite', team_controller.pinvite);
 
 /// Quest Routes ///
 
