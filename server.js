@@ -11,6 +11,10 @@ dotenv.config({ path: '.env' })
 
 const indexRouter = require('./routes/index')
 
+// Static files
+app.use(express.static('public'))
+app.use('/css',express.static(__dirname+'public/css'))
+
 // view engine setup
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
