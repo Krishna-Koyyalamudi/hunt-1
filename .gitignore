@@ -1,8 +1,0 @@
-/node_modules
-
-# Ignore API keys and secrets
-.env
-
-combined.log
-
-errors.log
